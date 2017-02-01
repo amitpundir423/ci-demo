@@ -1,2 +1,1 @@
-# ci-demo
-sample repository to store ant build files to deploy components
+CI Demo for Cloudbees.
