@@ -6,10 +6,13 @@
     <target name="deployRunAllTests">
       <sf:deploy username="${sf.username}" 
         password="${sf.password}" 
-        serverurl="${sf.serverurl}" 
-        runAllTests="true"
+        serverurl="${sf.serverurl}"
         logType="Detail"
-        deployRoot="src"/>
+        deployRoot="src"
+		testLevel="RunSpecifiedTests">
+		<runTest>DragDropFileUploadController_Test</runTest>
+	</sf:deploy>
+
     </target>
 
     <target name="undeployCode">
