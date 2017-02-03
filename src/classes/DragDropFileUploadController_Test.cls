@@ -5,7 +5,7 @@ private class DragDropFileUploadController_Test {
     	Account acc = new Account();
     	//acc.Name = 'Test';
     	insert acc;
-		//comment added again
+		//comment added again today
     	
         DragDropFileUploadController c = new DragDropFileUploadController(new ApexPages.StandardController(acc));
         String error = DragDropFileUploadController.saveFile('filename',null,null);
